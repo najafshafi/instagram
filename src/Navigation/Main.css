@@ -1,0 +1,46 @@
+
+  
+  #left_Navgation{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  border-right: 1px solid rgba(161, 160, 160, 0.5);
+  }
+  
+  #image{
+    margin-top: 20px;
+    width: 232px;
+    height: 70px;
+  }
+  
+  
+  .Icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 10px 5px 10px;
+    padding: 10px 15px 10px 15px;
+    border: 0.50px solid rgba(212, 210, 210, 0);
+    border-radius: 15px;
+    background: none;
+  }
+  
+  .Icons > span{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-left: 10px;
+  }
+
+  .Icons:hover{
+    cursor: pointer;
+    background-color: rgba(200, 200, 200, 0.385);
+    border: 0.50px solid rgba(212, 210, 210, 0.546);
+    border-radius:15px;
+  }
+
+.Icons:last-child{
+position: fixed;
+bottom: 10px;
+}

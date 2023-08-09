@@ -1,0 +1,92 @@
+.Suggestions{
+
+}
+
+.Profile_div{
+    margin-top: 50px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.account{
+    display: flex;
+    align-items: center;
+}
+.picture{
+    margin-right: 10px;
+}
+.Username_acc{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: start;
+}
+
+.accName{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: dimgray;
+}
+
+.switch__acc > span{
+    color: rgb(0, 119, 255);
+    font-size: small;
+}
+
+.suggestion__tittle{
+    margin-top: 30px;
+    font-weight:bolder;
+    color: gray;
+    font-size: 14px;
+}
+
+.suggestion__username{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.suggestion__accname{
+    color: dimgray;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.follow__button button{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: rgb(0, 119, 255);
+    background: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.suggestion__acc{
+     display: flex;
+    align-items: center;
+}
+
+
+.suggesttion_profiles{
+    margin-right: 10px;
+}
+
+.suggestion__profiles{
+    margin-top: 15px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.follow__button button:hover{
+    color: black;
+    cursor: pointer;
+}

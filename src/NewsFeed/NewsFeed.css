@@ -1,0 +1,14 @@
+.NewsFeed{
+display: flex;
+flex-direction: row;
+}
+
+
+.Timeline{
+    flex: 0.65;
+}
+
+
+.Suggestions{
+    flex: 0.35;
+}

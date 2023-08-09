@@ -1,0 +1,70 @@
+.Post{
+    margin-left: 100px;
+    width: 500px;
+    margin: 30px 40px 50px 40px;
+}
+
+.Post__Header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    flex-direction: row;
+}
+
+.Avtar_username{
+    display: flex;
+    align-items: center;
+}
+
+.hours{
+    font-size:small;
+    color: rgba(63, 63, 63, 0.736);
+    }
+
+.Avtar_username > span{
+    margin-left: 5px;
+    font-weight: bolder;
+}
+
+
+.image__Header > img{
+width: 100%;
+}
+
+
+.footer__Header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.Post__Icon{
+  padding: 5px;
+}
+
+.Post__Icon:hover{
+    cursor: pointer;
+}
+
+.Likes{
+font-size: 14px;
+font-weight: bold;
+margin: 5px;
+}
+
+.footer__text{
+    margin: 10px;
+    text-size-adjust: 10px;
+    color: grey;
+}
+
+.footer__text > hr{
+    width: 0.5px;
+    height: 0.5px;
+}
+
+.footer__caption{
+    font-size: 14px;
+    line-height:18px;
+color:#000000
+}
