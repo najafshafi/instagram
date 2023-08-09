@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Timeline.css";
 import Post from "./Post/Post";
+
 const Timeline = () => {
   const [posts, setPost] = useState([
     {

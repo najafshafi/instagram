@@ -3,7 +3,6 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import ExploreOutlinedIcon from "@mui/icons-material/ExploreOutlined";
 import AddBoxOutlinedIcon from "@mui/icons-material/AddBoxOutlined";
-import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import MovieOutlinedIcon from "@mui/icons-material/MovieOutlined";
 import MessageOutlinedIcon from "@mui/icons-material/MessageOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
@@ -11,6 +10,7 @@ import { Route, Routes, Link } from "react-router-dom";
 
 import insta from "../assets/insta.png";
 import "./Main.css";
+import { Avatar } from "@mui/material";
 
 function Main() {
   return (
@@ -52,7 +52,7 @@ function Main() {
           <span>Create</span>
         </button>
         <button className="Icons">
-          <AccountCircleOutlinedIcon />
+          <Avatar sx={{ width: 24, height: 24 }}>n</Avatar>
           <span>Profile</span>
         </button>
         <button className="Icons">
