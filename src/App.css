@@ -1,3 +1,7 @@
+*{
+    font-family: "Instagram Sans";
+}
+
 .App{
     display: flex;
     flex-direction: row;

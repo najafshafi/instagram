@@ -7,7 +7,7 @@ import { GiphyFetch } from "@giphy/js-fetch-api";
 const gf = new GiphyFetch("9CD0RQDnsIQnu6aiP7XhYUWc4OqyHoPp");
 
 // configure your fetch: fetch 10 gifs at a time as the user scrolls (offset is handled by the grid)
-const fetchGifs = (offset: number) => gf.trending({ offset, limit: 10 });
+const fetchGifs = (offset) => gf.trending({ offset, limit: 10 });
 
 const Explore = () => {
   return (

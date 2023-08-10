@@ -7,7 +7,7 @@
 .Post{
     margin-left: 100px;
     width: 500px;
-    margin: 30px 40px 50px 40px;
+    margin: 10px 40px 20px 40px;
 }
 
 .Post__Header{
@@ -15,6 +15,7 @@
     justify-content: space-between;
     margin-bottom: 10px;
     flex-direction: row;
+    align-items: center;
 }
 
 .Avtar_username{

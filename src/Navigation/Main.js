@@ -15,7 +15,7 @@ import { Avatar } from "@mui/material";
 import { useState } from "react";
 
 function Main() {
-  const [activeLink, setActiveLink] = useState(null);
+  const [activeLink, setActiveLink] = useState("home");
 
   const handleLinkClick = (linkName) => {
     setActiveLink(linkName);
@@ -24,9 +24,10 @@ function Main() {
   return (
     <>
       <div id="left_Navgation">
-        <NavLink to="/">
+        <NavLink onClick={() => handleLinkClick("home")} to="/">
           {<img id="image" src={insta} alt="Logo Here"></img>}
         </NavLink>
+
         <NavLink
           className={`clickable-link ${
             activeLink === "home" ? "bold-link" : ""
@@ -42,6 +43,7 @@ function Main() {
           <SearchOutlinedIcon />
           <span>Search</span>
         </button>
+
         <NavLink
           className={`clickable-link ${
             activeLink === "explore" ? "bold-link" : ""
