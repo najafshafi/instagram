@@ -1,40 +1,58 @@
+import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import HomeIcon from "@mui/icons-material/Home";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import ExploreOutlinedIcon from "@mui/icons-material/ExploreOutlined";
+import ExploreIcon from "@mui/icons-material/Explore";
 import AddBoxOutlinedIcon from "@mui/icons-material/AddBoxOutlined";
 import MovieOutlinedIcon from "@mui/icons-material/MovieOutlined";
 import MessageOutlinedIcon from "@mui/icons-material/MessageOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
-import { Route, Routes, Link } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
 import insta from "../assets/insta.png";
 import "./Main.css";
 import { Avatar } from "@mui/material";
+import { useState } from "react";
 
 function Main() {
+  const [activeLink, setActiveLink] = useState(null);
+
+  const handleLinkClick = (linkName) => {
+    setActiveLink(linkName);
+  };
+
   return (
     <>
       <div id="left_Navgation">
-        <Link to="/Main">
+        <NavLink to="/">
           {<img id="image" src={insta} alt="Logo Here"></img>}
-        </Link>
-        <Routes>
-          <Route path="/Main" element={Main} />
-        </Routes>
+        </NavLink>
+        <NavLink
+          className={`clickable-link ${
+            activeLink === "home" ? "bold-link" : ""
+          } Icons`}
+          onClick={() => handleLinkClick("home")}
+          to="/"
+        >
+          {activeLink === "home" ? <HomeIcon /> : <HomeOutlinedIcon />}
 
-        <button className="Icons">
-          <HomeIcon />
           <span>Home</span>
-        </button>
+        </NavLink>
         <button className="Icons">
           <SearchOutlinedIcon />
           <span>Search</span>
         </button>
-        <button className="Icons">
-          <ExploreOutlinedIcon />
+        <NavLink
+          className={`clickable-link ${
+            activeLink === "explore" ? "bold-link" : ""
+          } Icons`}
+          onClick={() => handleLinkClick("explore")}
+          to="/explore"
+        >
+          {activeLink === "explore" ? <ExploreIcon /> : <ExploreOutlinedIcon />}
           <span>Explore</span>
-        </button>
+        </NavLink>
+
         <button className="Icons">
           <MovieOutlinedIcon />
           <span>Reels</span>

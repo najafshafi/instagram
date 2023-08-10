@@ -5,6 +5,8 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@giphy/js-fetch-api": "^5.1.0",
+    "@giphy/react-components": "^8.1.0",
     "@mui/icons-material": "^5.14.3",
     "@mui/material": "^5.14.3",
     "@testing-library/jest-dom": "^5.17.0",
