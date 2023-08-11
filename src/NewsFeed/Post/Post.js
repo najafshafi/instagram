@@ -13,7 +13,7 @@ const Post = ({ user, postImage, likes, postTime, caption }) => {
         <div className="Post">
           <div className="Post__Header">
             <div className="Avtar_username">
-              <Avatar>{user.charAt(0)}</Avatar>
+              <Avatar sx={{ width: 40, height: 40 }} src={postImage} />
               <span>{user} •</span>
               <span className="hours">{postTime}</span>
             </div>

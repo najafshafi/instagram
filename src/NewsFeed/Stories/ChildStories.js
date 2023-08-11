@@ -2,7 +2,7 @@ import React from "react";
 import "./ChildStories.css";
 import { Avatar } from "@mui/material";
 
-const ChildStories = ({ user, postImage }) => {
+const ChildStories = ({ data }) => {
   return (
     <div className="Story__container">
       <div className="Story_box">
@@ -11,10 +11,10 @@ const ChildStories = ({ user, postImage }) => {
             className="avatar"
             alt="Remy Sharp"
             sx={{ width: 56, height: 56 }}
-            src={postImage}
+            src={data.postImage}
           />
         </span>
-        <span>{user}</span>
+        <span>{data.user}</span>
       </div>
     </div>
   );

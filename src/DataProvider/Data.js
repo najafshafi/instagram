@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-const DataProvider = React.createContext();
+const DataContext = React.createContext();
 
 const DataObject = [
   {
@@ -40,13 +40,15 @@ const DataObject = [
   },
 ];
 
-const Data = ({ child }) => {
+export const DataProvider = ({ children }) => {
   const [data, setdata] = useState(DataObject);
-
-  <DataProvider.Provider value={{ data }}>{child}</DataProvider.Provider>;
-
-  return <div>Data</div>;
+  return (
+    <>
+      <DataContext.Provider value={{ data, setdata }}>
+        {children}
+      </DataContext.Provider>
+    </>
+  );
 };
 
-export const useData = () => React.useContext(DataProvider);
-export default Data;
+export const useData = () => React.useContext(DataContext);
