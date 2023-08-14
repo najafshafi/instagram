@@ -12,7 +12,7 @@ function App() {
         <div className="Nav_component">
           <Main />
         </div>
-        <div className="News_component">
+        <div className="Right_component">
           <Routes>
             <Route path="/" element={<NewsFeed />} />
             <Route path="/explore" element={<Explore />} />

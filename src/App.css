@@ -1,18 +1,40 @@
 *{
     font-family: "Instagram Sans";
+     box-sizing: border-box;
 }
 
 .App{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 
 .Nav_component{
     flex: 0.145;
+    margin-right: 200px;
 }
 
 
-.News_component{
+.Right_component{
     flex: 0.855;
 }
+
+
+/* 
+@media (max-width: 767px) {    
+    .App{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .Nav_component{
+        flex: 0.145;
+    }
+    
+    
+    .Right_component{
+        flex: 0.855;
+    }
+  } */
