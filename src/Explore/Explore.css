@@ -1,9 +1,9 @@
 .Explore__container{
     display: flex;
+    width: 70vw;
     align-items:center;
     justify-content: center;
-    margin: 0px 230.5px 30px 0px;
-    padding: 24px 20px 0px 20px;
+    padding: 0px 20px 0px 20px;
 }
 
 
@@ -126,4 +126,27 @@ border: 1px solid gray;
     }
 
         
-       
+@media screen and (max-width:1240px) {
+    .Explore__container{
+        display: flex;
+        width: 100vw;
+        align-items:center;
+        justify-content: center;
+        margin: 14px 0px 0px 0px;
+        padding: 0px 20px 0px 20px;
+    }
+    
+}
+
+        
+@media screen and (max-width:767px) {
+    .Explore__container{
+        display: flex;
+        width: 100vw;
+        align-items:center;
+        justify-content: center;
+        margin: 14px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    
+}

@@ -6,6 +6,7 @@ flex-direction: row;
 
 .Timeline{
     flex: 0.65;
+    margin-right: 50px;
 }
 
 
@@ -14,3 +15,39 @@ flex-direction: row;
 }
 
 
+@media screen and (max-width:1160px){
+    .NewsFeed{
+        display: flex;
+        }
+        
+        
+        .Timeline{
+            flex: 1;
+            margin-right: 0px;
+        }
+        
+        
+        .Suggestions{
+            display: none;
+        }
+        
+}
+
+@media screen and (max-width:767px){
+    .NewsFeed{
+        width: 100vw;
+        display: flex;
+        margin: 0px 10px
+        }
+        
+        
+        .Timeline{
+            flex: 1;
+        }
+        
+        
+        .Suggestions{
+            display: none;
+        }
+        
+}

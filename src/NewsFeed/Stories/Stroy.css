@@ -33,3 +33,17 @@
 .Story__Navigation > button:hover{
 cursor: pointer;
 } */
+
+@media screen and (max-width:767px) {
+    .Main__story__container{
+        margin: 30px 0px 30px 0px;
+        width: 100vw;
+        height: 85px;
+        overflow-x: scroll; 
+        display: flex;
+        scrollbar-width: none; 
+        align-items: center;
+        position: relative;
+    }
+    
+}

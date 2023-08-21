@@ -1,6 +1,8 @@
 *{
     font-family: "Instagram Sans";
      box-sizing: border-box;
+     margin: 0;
+     padding: 0;
 }
 
 .App{
@@ -12,29 +14,60 @@
 
 .Nav_component{
     flex: 0.145;
-    margin-right: 200px;
+    margin-right: 20px;
 }
 
 
 .Right_component{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex: 0.855;
 }
 
 
-/* 
-@media (max-width: 767px) {    
+
+@media (max-width: 1240px) {    
     .App{
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
     }
 
     .Nav_component{
-        flex: 0.145;
+        flex: 0.1;
+        margin-right: 0px;
     }
     
     
     .Right_component{
-        flex: 0.855;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       width: calc(75px - 100vw);
     }
-  } */
+  }
+
+
+  @media (max-width: 767px) {    
+    .App{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+       
+    }
+
+    .Nav_component{
+        width: 100%;
+        position: fixed;
+        bottom: 0px;
+        margin-right: 0px;
+        z-index: 2;
+    }
+    
+    
+    .Right_component{
+        width: 100%;
+    }
+  }

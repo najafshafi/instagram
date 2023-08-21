@@ -8,6 +8,7 @@ import AddBoxOutlinedIcon from "@mui/icons-material/AddBoxOutlined";
 import MovieOutlinedIcon from "@mui/icons-material/MovieOutlined";
 import MessageOutlinedIcon from "@mui/icons-material/MessageOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
+import InstagramIcon from "@mui/icons-material/Instagram";
 import { NavLink } from "react-router-dom";
 import insta from "../assets/insta.png";
 import "./Main.css";
@@ -29,7 +30,16 @@ function Main() {
         </NavLink>
 
         <NavLink
-          className={`clickable-link ${
+          className="Icons"
+          id="insta__logo"
+          onClick={() => handleLinkClick("home")}
+          to="/"
+        >
+          <InstagramIcon />
+        </NavLink>
+
+        <NavLink
+          className={` Mobile_buttons clickable-link ${
             activeLink === "home" ? "bold-link" : ""
           } Icons`}
           onClick={() => handleLinkClick("home")}
@@ -45,7 +55,7 @@ function Main() {
         </button>
 
         <NavLink
-          className={`clickable-link ${
+          className={`Mobile_buttons clickable-link ${
             activeLink === "explore" ? "bold-link" : ""
           } Icons`}
           onClick={() => handleLinkClick("explore")}
@@ -55,11 +65,11 @@ function Main() {
           <span>Explore</span>
         </NavLink>
 
-        <button className="Icons">
+        <button className="Icons Mobile_buttons">
           <MovieOutlinedIcon />
           <span>Reels</span>
         </button>
-        <button className="Icons">
+        <button className="Icons Mobile_buttons">
           <MessageOutlinedIcon />
           <span>Message</span>
         </button>
@@ -67,14 +77,15 @@ function Main() {
           <FavoriteBorderIcon />
           <span>Notifications</span>
         </button>
-        <button className="Icons">
+        <button className="Icons Mobile_buttons">
           <AddBoxOutlinedIcon />
           <span>Create</span>
         </button>
-        <button className="Icons">
+        <button className="Icons Mobile_buttons">
           <Avatar sx={{ width: 24, height: 24 }}>n</Avatar>
           <span>Profile</span>
         </button>
+
         <button className="Icons">
           <MenuOutlinedIcon />
           <span>More</span>

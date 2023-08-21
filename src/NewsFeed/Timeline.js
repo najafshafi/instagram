@@ -6,7 +6,7 @@ const Timeline = () => {
   const { data } = useData();
 
   return (
-    <div className="Timeline">
+    <div className="Post__Timeline">
       <div className="Post">
         {data.map((post) => (
           <Post

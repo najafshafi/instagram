@@ -1,5 +1,13 @@
-.Timeline{
+.Post__Timeline{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+
+@media screen and (max-width:767px){
+    .Post__Timeline{
+        margin: 0px 10px;
+    }
+}
+
