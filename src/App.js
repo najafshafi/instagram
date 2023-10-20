@@ -16,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<NewsFeed />} />
             <Route path="/explore" element={<Explore />} />
+            
           </Routes>
         </div>
       </div>
